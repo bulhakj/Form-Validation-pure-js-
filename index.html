@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Walidacja formularza</h1>
+
+
+
+        <form action="#" id="myForm">
+
+            <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
+
+            <input type="email" name="your-mail" placeholder="Adres e-mail" data-error="Wpisz adres e-mail">
+
+            <select name="your-subject" data-error="Wybierz temat wiadomości">
+
+                <option value="" disabled selected>- Temat wiadomości -</option>
+
+                <option value="pytanie">Pytanie</option>
+
+                <option value="pytanie">Propozycja</option>
+
+                <option value="pytanie">Support</option>
+
+            </select>
+
+            <textarea name="your-message" placeholder="Treść wiadomości" data-error="Za krótka wiadomość">
+            </textarea>
+
+            <button type="submit">Wyślij</button>
+
+
+        </form>
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
